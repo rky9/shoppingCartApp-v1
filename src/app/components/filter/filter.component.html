@@ -1,0 +1,20 @@
+<div data-role="main">
+  <h3>Filter</h3>
+  <form #minMaxValue="ngForm">
+    <!-- <div data-role="rangeslider" class="ui-rangeslider">
+      <input type="range" name="price-min" class="range" step="1"  id="priceMin" #priceMin ngModel value="100" min="0" max="10000">
+      <input type="range" name="price-max" class="range" step="1" id="priceMax" #priveMax ngModel value="10000" min="0" max="10000">
+    </div> -->
+    <!-- <mv-slider [(value)]="value" [min]="1" [max]="100" [enabled]="enabled" (change)="change()"></mv-slider> -->
+    <!-- <ng5-slider [(value)]="value" [options]="options" [formControl]="control" (valueChange)="valueChange($event)"></ng5-slider> -->
+    <ng5-slider [(value)]="rangeSliderMinValue" [(highValue)]="rangeSliderMaxValue" [options]="rangeSliderOptions"></ng5-slider>
+    <!-- <section class="range-slider">
+      <input type="range" name="price-min" id="priceMin" ngModel value="100" min="0" max="10000">
+      <input type="range" name="price-max" id="priceMax" ngModel value="10000" min="0" max="10000">
+    </section> -->
+    
+  </form>
+  <label class="filterLabel">price</label>
+    <button class="btn btn-warning" (click)="updatedMinMaxValue(priceMin, priveMax)">
+      Apply </button>
+</div>

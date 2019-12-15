@@ -1,0 +1,9 @@
+.strike {
+    text-decoration: line-through;
+  }
+  @media (max-width: 480px) {
+    .p-xs-1{
+      padding:1px;
+    }
+   .w-xs-100{width: 100%!important;}
+  }

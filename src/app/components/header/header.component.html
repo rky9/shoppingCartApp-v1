@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-dark bg-primary parent position-relative">
+  <a class="navbar-brand"><i class="fas fa-star text-warning star-icon"></i></a>
+  <app-search class="offset-0 offset-sm-5 offset-md-6 offset-lg-9"></app-search>
+  <span class="fa fa-shopping-cart h3 text-white cart-font" (click)="navigateToCartPage();"></span>
+    <span class="text-white rounded-circle bg-danger p-2 badge badge-secondary position-absolute counterbx">{{counter}}</span>
+</nav>
+<div class="container-fluid mt-5">
+ <div class="row">
+  <div class="col-12 col-sm-3 col-md-3">
+    <app-filter></app-filter>
+  </div>
+  <div class="col-sm- 10 col-md-9">
+    <app-sort></app-sort>
+    <div class="mt-4">
+      <app-shopping-list></app-shopping-list>
+    </div>
+  </div>
+ </div>
+</div>
